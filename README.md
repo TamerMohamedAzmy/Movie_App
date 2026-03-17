@@ -1,73 +1,84 @@
-# React + TypeScript + Vite
+# 🎬 Movie App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 📖 Overview
 
-Currently, two official plugins are available:
+A modern movie application built with **TypeScript** and **Tailwind CSS** that allows users to explore, search, and view detailed information about movies using an external API.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 🚀 Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* 🎥 Browse popular and trending movies
+* 🔍 Search for movies in real-time
+* 📄 View detailed movie information (rating, overview, genres)
+* ⭐ Add movies to favorites (optional)
+* 🎬 View similar/recommended movies
+* 📱 Fully responsive design
+* ⚡ Fast performance with optimized API calls
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🛠️ Technologies Used
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+* TypeScript
+* Tailwind CSS
+* JavaScript (ES6+)
+* Movie API (e.g., TMDB)
+* 
+## ⚙️ How It Works
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+1. The app fetches movie data from an external API.
+2. Displays movies dynamically on the UI.
+3. Users can search for any movie by title.
+4. Clicking on a movie shows detailed information.
+5. Optional: Save favorites using Local Storage.
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+---
+
+## ▶️ Getting Started
+
+### 1. Clone the repository
+
+```
+git clone {(https://github.com/TamerMohamedAzmy/Movie_App/)}
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### 2. Install dependencies
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
 ```
+npm install
+```
+
+### 3. Run the project
+
+```
+npm run dev
+```
+
+---
+
+## 🌐 Live Demo
+
+https://movie-tamer.netlify.app/login
+
+## 📸 Screenshots
+<img width="938" height="436" alt="movie" src="https://github.com/user-attachments/assets/2d783877-7d3a-4b72-8512-4a0c1c1eda48" />
+
+
+## 🔐 Environment Variables
+
+API_KEY = "a189e8cf6bbef5b777e34a66fc3cd75b";
+
+## 📌 Future Improvements
+
+* إضافة Pagination
+* تحسين تجربة المستخدم (UX)
+* إضافة Dark Mode
+* تحسين الأداء وSEO
+* إضافة Authentication
+
+## 👨‍💻 Author
+Tamer Mohamed Azmy
+
+Your Name
+GitHub: https://github.com/your-username
